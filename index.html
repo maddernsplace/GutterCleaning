@@ -29,265 +29,281 @@
 
   <!-- HERO -->
   <section class="hero">
-    <div class="hero__inner container">
-      <div class="hero__content">
-        <span class="hero__tag">Professional Gutter Cleaning</span>
-        <h1 class="hero__title">Keep Your Home<br /><span>Safe &amp; Protected</span></h1>
-        <p class="hero__subtitle">Blocked gutters cause serious damage. We clear them fast, safely, and affordably — so you don't have to worry.</p>
-        <div class="hero__ctas">
-          <a href="#contact" class="btn btn--gold btn--lg">Get a Free Quote</a>
-          <a href="tel:+61000000000" class="btn btn--outline btn--lg">Call Us Now</a>
-        </div>
-        <div class="hero__badges">
-          <div class="badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Fully Insured</span>
-          </div>
-          <div class="badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>Same-Day Available</span>
-          </div>
-          <div class="badge">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-            <span>100% Satisfaction</span>
-          </div>
-        </div>
+
+    <!-- Full-width background scene -->
+    <svg class="hero__bg-svg" viewBox="0 0 1440 620" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#1a4a6b"/>
+          <stop offset="55%"  stop-color="#2d7a9a"/>
+          <stop offset="100%" stop-color="#4aa8c0"/>
+        </linearGradient>
+        <linearGradient id="groundGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#2d8a56"/>
+          <stop offset="100%" stop-color="#1a5c38"/>
+        </linearGradient>
+        <linearGradient id="roofGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#1e3a12"/>
+          <stop offset="100%" stop-color="#2d5a1e"/>
+        </linearGradient>
+        <linearGradient id="wallGrad" x1="0" y1="0" x2="0" y2="1">
+          <stop offset="0%"   stop-color="#f0ede6"/>
+          <stop offset="100%" stop-color="#ddd8ce"/>
+        </linearGradient>
+        <linearGradient id="windowGloss2" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%"   stop-color="white" stop-opacity="0.5"/>
+          <stop offset="100%" stop-color="white" stop-opacity="0"/>
+        </linearGradient>
+        <radialGradient id="sunGlow" cx="50%" cy="50%" r="50%">
+          <stop offset="0%"   stop-color="#fff5a0" stop-opacity="0.8"/>
+          <stop offset="100%" stop-color="#fff5a0" stop-opacity="0"/>
+        </radialGradient>
+        <filter id="cloudBlur">
+          <feGaussianBlur stdDeviation="2"/>
+        </filter>
+      </defs>
+
+      <!-- Sky -->
+      <rect width="1440" height="620" fill="url(#skyGrad)"/>
+
+      <!-- Sun glow -->
+      <circle cx="1150" cy="100" r="120" fill="url(#sunGlow)" opacity="0.6"/>
+      <circle cx="1150" cy="100" r="52" fill="#fff9c0" opacity="0.9"/>
+      <circle cx="1150" cy="100" r="40" fill="#fffde0"/>
+
+      <!-- Clouds -->
+      <g filter="url(#cloudBlur)" opacity="0.92">
+        <ellipse cx="220" cy="90" rx="90" ry="38" fill="white"/>
+        <ellipse cx="165" cy="100" rx="60" ry="30" fill="white"/>
+        <ellipse cx="275" cy="100" rx="70" ry="32" fill="white"/>
+        <ellipse cx="220" cy="108" rx="100" ry="30" fill="white"/>
+      </g>
+      <g filter="url(#cloudBlur)" opacity="0.85">
+        <ellipse cx="820" cy="70" rx="110" ry="42" fill="white"/>
+        <ellipse cx="760" cy="80" rx="72" ry="34" fill="white"/>
+        <ellipse cx="880" cy="82" rx="80" ry="36" fill="white"/>
+        <ellipse cx="820" cy="92" rx="120" ry="32" fill="white"/>
+      </g>
+      <g filter="url(#cloudBlur)" opacity="0.7">
+        <ellipse cx="1300" cy="55" rx="80" ry="30" fill="white"/>
+        <ellipse cx="1250" cy="63" rx="55" ry="25" fill="white"/>
+        <ellipse cx="1350" cy="63" rx="60" ry="27" fill="white"/>
+      </g>
+
+      <!-- Distant hills -->
+      <ellipse cx="200"  cy="450" rx="340" ry="130" fill="#1f5c30" opacity="0.5"/>
+      <ellipse cx="1260" cy="440" rx="320" ry="120" fill="#1a5228" opacity="0.45"/>
+      <ellipse cx="720"  cy="460" rx="500" ry="110" fill="#236635" opacity="0.35"/>
+
+      <!-- Ground / lawn -->
+      <rect x="0" y="480" width="1440" height="140" fill="url(#groundGrad)"/>
+      <!-- Lawn texture -->
+      <ellipse cx="720" cy="482" rx="800" ry="18" fill="#3aa864" opacity="0.4"/>
+
+      <!-- ── LEFT TREE ── -->
+      <rect x="118" y="310" width="22" height="175" rx="6" fill="#5a3e1e"/>
+      <ellipse cx="129" cy="295" rx="68" ry="80" fill="#1a6b40"/>
+      <ellipse cx="100" cy="320" rx="48" ry="60" fill="#1e7a48"/>
+      <ellipse cx="158" cy="315" rx="52" ry="64" fill="#156038"/>
+      <ellipse cx="129" cy="270" rx="40" ry="50" fill="#22884e"/>
+
+      <!-- ── FAR RIGHT TREE ── -->
+      <rect x="1298" y="330" width="20" height="155" rx="5" fill="#5a3e1e"/>
+      <ellipse cx="1308" cy="315" rx="62" ry="74" fill="#1a6b40"/>
+      <ellipse cx="1280" cy="338" rx="44" ry="56" fill="#1e7a48"/>
+      <ellipse cx="1336" cy="332" rx="48" ry="60" fill="#156038"/>
+      <ellipse cx="1308" cy="292" rx="36" ry="46" fill="#22884e"/>
+
+      <!-- ── SMALL SHRUBS ── -->
+      <ellipse cx="310" cy="490" rx="55" ry="30" fill="#2d8a56"/>
+      <ellipse cx="280" cy="485" rx="36" ry="24" fill="#1a6b40"/>
+      <ellipse cx="340" cy="483" rx="42" ry="26" fill="#3a9e66"/>
+      <ellipse cx="1130" cy="490" rx="52" ry="28" fill="#2d8a56"/>
+      <ellipse cx="1105" cy="484" rx="34" ry="22" fill="#1a6b40"/>
+      <ellipse cx="1158" cy="482" rx="40" ry="24" fill="#3a9e66"/>
+
+      <!-- ══════════════════════════════════ -->
+      <!-- MAIN HOUSE                         -->
+      <!-- ══════════════════════════════════ -->
+
+      <!-- House shadow on ground -->
+      <ellipse cx="780" cy="490" rx="270" ry="18" fill="#0a3018" opacity="0.35"/>
+
+      <!-- House walls -->
+      <rect x="530" y="295" width="500" height="195" fill="url(#wallGrad)"/>
+      <!-- Brick course lines -->
+      <g stroke="#c8c0b0" stroke-width="0.8" opacity="0.55">
+        <line x1="530" y1="315" x2="1030" y2="315"/>
+        <line x1="530" y1="335" x2="1030" y2="335"/>
+        <line x1="530" y1="355" x2="1030" y2="355"/>
+        <line x1="530" y1="375" x2="1030" y2="375"/>
+        <line x1="530" y1="395" x2="1030" y2="395"/>
+        <line x1="530" y1="415" x2="1030" y2="415"/>
+        <line x1="530" y1="435" x2="1030" y2="435"/>
+        <line x1="530" y1="455" x2="1030" y2="455"/>
+        <line x1="530" y1="475" x2="1030" y2="475"/>
+        <!-- vertical offsets per course -->
+        <line x1="610" y1="305" x2="610" y2="325"/> <line x1="690" y1="305" x2="690" y2="325"/>
+        <line x1="770" y1="305" x2="770" y2="325"/> <line x1="850" y1="305" x2="850" y2="325"/>
+        <line x1="930" y1="305" x2="930" y2="325"/> <line x1="1010" y1="305" x2="1010" y2="325"/>
+        <line x1="570" y1="325" x2="570" y2="345"/> <line x1="650" y1="325" x2="650" y2="345"/>
+        <line x1="730" y1="325" x2="730" y2="345"/> <line x1="810" y1="325" x2="810" y2="345"/>
+        <line x1="890" y1="325" x2="890" y2="345"/> <line x1="970" y1="325" x2="970" y2="345"/>
+      </g>
+
+      <!-- Window left -->
+      <rect x="565" y="335" width="115" height="95" rx="5" fill="#b8dff5" opacity="0.85" stroke="#8ab8d8" stroke-width="2.5"/>
+      <rect x="565" y="335" width="115" height="95" rx="5" fill="url(#windowGloss2)" opacity="0.4"/>
+      <line x1="622" y1="335" x2="622" y2="430" stroke="#8ab8d8" stroke-width="2.5"/>
+      <line x1="565" y1="382" x2="680" y2="382" stroke="#8ab8d8" stroke-width="2.5"/>
+      <rect x="558" y="427" width="130" height="9" rx="4" fill="#c8c0b0"/>
+
+      <!-- Window right -->
+      <rect x="880" y="335" width="115" height="95" rx="5" fill="#b8dff5" opacity="0.85" stroke="#8ab8d8" stroke-width="2.5"/>
+      <rect x="880" y="335" width="115" height="95" rx="5" fill="url(#windowGloss2)" opacity="0.4"/>
+      <line x1="937" y1="335" x2="937" y2="430" stroke="#8ab8d8" stroke-width="2.5"/>
+      <line x1="880" y1="382" x2="995" y2="382" stroke="#8ab8d8" stroke-width="2.5"/>
+      <rect x="873" y="427" width="130" height="9" rx="4" fill="#c8c0b0"/>
+
+      <!-- Front door -->
+      <rect x="715" y="395" width="130" height="95" rx="5" fill="#6b4f0e"/>
+      <rect x="715" y="395" width="130" height="95" rx="5" fill="rgba(255,255,255,0.07)"/>
+      <rect x="724" y="403" width="50" height="38" rx="3" fill="#5a4010" opacity="0.6"/>
+      <rect x="786" y="403" width="50" height="38" rx="3" fill="#5a4010" opacity="0.6"/>
+      <rect x="724" y="448" width="50" height="33" rx="3" fill="#5a4010" opacity="0.6"/>
+      <rect x="786" y="448" width="50" height="33" rx="3" fill="#5a4010" opacity="0.6"/>
+      <circle cx="837" cy="444" r="7" fill="#c9a84c"/>
+      <!-- Door step -->
+      <rect x="700" y="487" width="160" height="12" rx="4" fill="#c8c0b0"/>
+
+      <!-- Chimney -->
+      <rect x="870" y="175" width="52" height="88" rx="4" fill="#4a3828"/>
+      <rect x="862" y="168" width="68" height="14" rx="4" fill="#5a4535"/>
+      <!-- Smoke puffs -->
+      <circle cx="886" cy="155" r="14" fill="rgba(255,255,255,0.18)"/>
+      <circle cx="900" cy="138" r="18" fill="rgba(255,255,255,0.13)"/>
+      <circle cx="912" cy="120" r="14" fill="rgba(255,255,255,0.09)"/>
+
+      <!-- Roof -->
+      <polygon points="490,298 780,110 1070,298" fill="url(#roofGrad)"/>
+      <!-- Roof tile rows -->
+      <g stroke="#162d0e" stroke-width="1" opacity="0.35">
+        <line x1="554" y1="260" x2="1006" y2="260"/>
+        <line x1="522" y1="280" x2="1038" y2="280"/>
+      </g>
+      <!-- Ridge cap -->
+      <rect x="772" y="106" width="16" height="22" rx="4" fill="#c9a84c"/>
+
+      <!-- ── GUTTERS ── -->
+      <!-- Left eave gutter -->
+      <rect x="488" y="293" width="295" height="13" rx="4" fill="#4b5563"/>
+      <rect x="488" y="293" width="295" height="4"  rx="2" fill="rgba(255,255,255,0.14)"/>
+      <!-- Right eave gutter -->
+      <rect x="777" y="293" width="295" height="13" rx="4" fill="#4b5563"/>
+      <rect x="777" y="293" width="295" height="4"  rx="2" fill="rgba(255,255,255,0.14)"/>
+
+      <!-- LEAVES & DEBRIS in left gutter -->
+      <ellipse cx="540" cy="300" rx="28" ry="6" fill="#5a7a2a" opacity="0.95"/>
+      <ellipse cx="590" cy="299" rx="22" ry="5" fill="#4a6622" opacity="0.9"/>
+      <ellipse cx="638" cy="301" rx="30" ry="6" fill="#6a8a32" opacity="0.9"/>
+      <ellipse cx="690" cy="299" rx="18" ry="5" fill="#8B6914" opacity="0.7"/>
+      <ellipse cx="730" cy="300" rx="24" ry="6" fill="#5a7a2a" opacity="0.85"/>
+      <path d="M525,297 Q536,289 548,296 Q539,304 525,297Z" fill="#3d6b15"/>
+      <path d="M610,296 Q622,287 632,295 Q624,303 610,296Z" fill="#4a7a1a"/>
+      <path d="M672,298 Q680,291 690,297 Q683,304 672,298Z" fill="#5a8a22"/>
+
+      <!-- Left downpipe -->
+      <rect x="488" y="304" width="16" height="192" rx="4" fill="#4b5563"/>
+      <rect x="488" y="304" width="4"  height="192" rx="2" fill="rgba(255,255,255,0.13)"/>
+      <!-- Overflow water from blocked left gutter -->
+      <path d="M484,360 Q474,378 477,400 Q480,418 473,438 Q468,455 472,472" stroke="#5bb4f0" stroke-width="3.5" stroke-linecap="round" fill="none" opacity="0.8"/>
+      <path d="M505,340 Q515,358 511,378 Q507,395 512,412" stroke="#5bb4f0" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.55"/>
+      <circle cx="472" cy="474" r="5" fill="#5bb4f0" opacity="0.7"/>
+      <circle cx="512" cy="414" r="4" fill="#5bb4f0" opacity="0.5"/>
+
+      <!-- Right downpipe -->
+      <rect x="1056" y="304" width="16" height="192" rx="4" fill="#4b5563"/>
+      <rect x="1056" y="304" width="4"  height="192" rx="2" fill="rgba(255,255,255,0.13)"/>
+      <!-- Clean flow (right side — already cleaned) -->
+      <path d="M1064,360 Q1070,378 1067,400 Q1064,420 1068,442 Q1071,460 1067,476" stroke="#5bb4f0" stroke-width="3" stroke-linecap="round" fill="none" opacity="0.6"/>
+      <circle cx="1067" cy="478" r="4.5" fill="#5bb4f0" opacity="0.55"/>
+
+      <!-- ── LADDER ── -->
+      <line x1="1010" y1="175" x2="985"  y2="310" stroke="#c9a84c" stroke-width="9"  stroke-linecap="round"/>
+      <line x1="1060" y1="175" x2="1035" y2="310" stroke="#c9a84c" stroke-width="9"  stroke-linecap="round"/>
+      <!-- Rungs -->
+      <line x1="1013" y1="192" x2="1063" y2="192" stroke="#c9a84c" stroke-width="6"  stroke-linecap="round"/>
+      <line x1="1008" y1="222" x2="1058" y2="222" stroke="#c9a84c" stroke-width="6"  stroke-linecap="round"/>
+      <line x1="1003" y1="252" x2="1053" y2="252" stroke="#c9a84c" stroke-width="6"  stroke-linecap="round"/>
+      <line x1="998"  y1="282" x2="1048" y2="282" stroke="#c9a84c" stroke-width="6"  stroke-linecap="round"/>
+      <!-- Feet -->
+      <line x1="985"  y1="310" x2="975"  y2="325" stroke="#c9a84c" stroke-width="7"  stroke-linecap="round"/>
+      <line x1="1035" y1="310" x2="1025" y2="325" stroke="#c9a84c" stroke-width="7"  stroke-linecap="round"/>
+
+      <!-- ── WORKER ── -->
+      <!-- Legs -->
+      <line x1="1022" y1="248" x2="1016" y2="278" stroke="#1e3a6e" stroke-width="10" stroke-linecap="round"/>
+      <line x1="1034" y1="248" x2="1038" y2="278" stroke="#1e3a6e" stroke-width="10" stroke-linecap="round"/>
+      <!-- Boots -->
+      <ellipse cx="1013" cy="282" rx="9" ry="6" fill="#111827"/>
+      <ellipse cx="1040" cy="282" rx="9" ry="6" fill="#111827"/>
+      <!-- Body / hi-vis vest -->
+      <rect x="1010" y="218" width="38" height="36" rx="7" fill="#1a6b40"/>
+      <line x1="1010" y1="234" x2="1048" y2="234" stroke="#c9a84c" stroke-width="5" opacity="0.9"/>
+      <!-- Right arm (holding gutter edge) -->
+      <path d="M1010,228 Q993,220 980,210" stroke="#f5c99a" stroke-width="9" stroke-linecap="round" fill="none"/>
+      <!-- Left arm (holding brush/scoop) -->
+      <path d="M1048,228 Q1062,222 1070,215" stroke="#1a6b40" stroke-width="9" stroke-linecap="round" fill="none"/>
+      <!-- Scoop tool -->
+      <path d="M1070,215 Q1065,204 1075,198 Q1086,196 1082,208 Q1078,218 1070,215Z" fill="#8B6914"/>
+      <!-- Head -->
+      <circle cx="1029" cy="210" r="18" fill="#f5c99a"/>
+      <!-- Hard hat -->
+      <path d="M1012,207 Q1029,188 1046,207 L1046,211 L1012,211Z" fill="#c9a84c"/>
+      <rect x="1010" y="207" width="38" height="7" rx="3.5" fill="#a88830"/>
+
+      <!-- Falling debris from gutter -->
+      <ellipse cx="975" cy="320" rx="11" ry="8" fill="#5a7a2a" opacity="0.9" transform="rotate(-20 975 320)"/>
+      <path d="M962,330 Q968,318 978,324 Q972,336 962,330Z" fill="#4a6622" opacity="0.85"/>
+      <ellipse cx="952" cy="343" rx="8" ry="6" fill="#8B6914" opacity="0.8"/>
+      <circle cx="940" cy="358" r="5" fill="#5a7a2a" opacity="0.75"/>
+      <circle cx="948" cy="372" r="4" fill="#6a8a32" opacity="0.7"/>
+
+      <!-- Bucket on ladder -->
+      <path d="M1052,248 Q1058,244 1066,244 L1069,268 Q1067,275 1060,275 Q1053,275 1050,268Z" fill="#c9a84c"/>
+      <line x1="1052" y1="248" x2="1069" y2="248" stroke="#a88830" stroke-width="2.5"/>
+      <path d="M1053,248 Q1060,242 1068,248" stroke="#8B6914" stroke-width="2.5" fill="none"/>
+      <ellipse cx="1059" cy="270" rx="8" ry="4" fill="#4a6622" opacity="0.85"/>
+
+      <!-- ── PATHWAY ── -->
+      <polygon points="730,490 810,490 840,620 700,620" fill="#d4cabb" opacity="0.7"/>
+      <line x1="770" y1="495" x2="770" y2="620" stroke="#bdb5a5" stroke-width="1.5" opacity="0.5" stroke-dasharray="8,8"/>
+    </svg>
+
+    <!-- Dark overlay so text is readable -->
+    <div class="hero__overlay"></div>
+
+    <!-- Text content -->
+    <div class="hero__content container">
+      <span class="hero__tag">Professional Gutter Cleaning</span>
+      <h1 class="hero__title">Keep Your Home<br /><span>Safe &amp; Protected</span></h1>
+      <p class="hero__subtitle">Blocked gutters cause serious damage. We clear them fast, safely, and affordably — so you don't have to worry.</p>
+      <div class="hero__ctas">
+        <a href="#contact" class="btn btn--gold btn--lg">Get a Free Quote</a>
+        <a href="tel:+61000000000" class="btn btn--outline btn--lg">Call Us Now</a>
       </div>
-
-      <!-- HERO ILLUSTRATION -->
-      <div class="hero__illustration">
-        <svg class="hero__svg" viewBox="0 0 520 480" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <!-- Rain drops background -->
-          <g opacity="0.18" class="rain-group">
-            <line x1="60" y1="20" x2="52" y2="55" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="100" y1="0" x2="92" y2="35" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="440" y1="30" x2="432" y2="65" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="480" y1="10" x2="472" y2="45" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="30" y1="100" x2="22" y2="135" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="500" y1="80" x2="492" y2="115" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="140" y1="15" x2="132" y2="40" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
-            <line x1="380" y1="5" x2="372" y2="30" stroke="#c9a84c" stroke-width="1.5" stroke-linecap="round"/>
-          </g>
-
-          <!-- Ground / lawn -->
-          <ellipse cx="260" cy="450" rx="220" ry="22" fill="#1a6b40" opacity="0.35"/>
-          <rect x="60" y="440" width="400" height="16" rx="8" fill="#2d8a56" opacity="0.25"/>
-
-          <!-- House body (wall) -->
-          <rect x="100" y="250" width="320" height="195" rx="4" fill="#f0ede6"/>
-          <!-- Brick texture lines -->
-          <g stroke="#d4c9b5" stroke-width="0.8" opacity="0.6">
-            <line x1="100" y1="270" x2="420" y2="270"/>
-            <line x1="100" y1="290" x2="420" y2="290"/>
-            <line x1="100" y1="310" x2="420" y2="310"/>
-            <line x1="100" y1="330" x2="420" y2="330"/>
-            <line x1="100" y1="350" x2="420" y2="350"/>
-            <line x1="100" y1="370" x2="420" y2="370"/>
-            <line x1="100" y1="390" x2="420" y2="390"/>
-            <line x1="100" y1="410" x2="420" y2="410"/>
-            <line x1="100" y1="430" x2="420" y2="430"/>
-            <line x1="175" y1="260" x2="175" y2="280"/> <line x1="245" y1="260" x2="245" y2="280"/>
-            <line x1="315" y1="260" x2="315" y2="280"/> <line x1="385" y1="260" x2="385" y2="280"/>
-            <line x1="140" y1="280" x2="140" y2="300"/> <line x1="210" y1="280" x2="210" y2="300"/>
-            <line x1="280" y1="280" x2="280" y2="300"/> <line x1="350" y1="280" x2="350" y2="300"/>
-            <line x1="175" y1="300" x2="175" y2="320"/> <line x1="245" y1="300" x2="245" y2="320"/>
-            <line x1="315" y1="300" x2="315" y2="320"/> <line x1="385" y1="300" x2="385" y2="320"/>
-            <line x1="140" y1="320" x2="140" y2="340"/> <line x1="210" y1="320" x2="210" y2="340"/>
-            <line x1="280" y1="320" x2="280" y2="340"/> <line x1="350" y1="320" x2="350" y2="340"/>
-          </g>
-
-          <!-- Left window -->
-          <rect x="125" y="290" width="90" height="75" rx="4" fill="#a8d4f0" opacity="0.8" stroke="#8ab8d8" stroke-width="2"/>
-          <rect x="125" y="290" width="90" height="75" rx="4" fill="url(#windowGloss)" opacity="0.3"/>
-          <line x1="170" y1="290" x2="170" y2="365" stroke="#8ab8d8" stroke-width="2"/>
-          <line x1="125" y1="327" x2="215" y2="327" stroke="#8ab8d8" stroke-width="2"/>
-          <!-- Window sill -->
-          <rect x="120" y="362" width="100" height="7" rx="3" fill="#d4c9b5"/>
-
-          <!-- Right window -->
-          <rect x="305" y="290" width="90" height="75" rx="4" fill="#a8d4f0" opacity="0.8" stroke="#8ab8d8" stroke-width="2"/>
-          <rect x="305" y="290" width="90" height="75" rx="4" fill="url(#windowGloss)" opacity="0.3"/>
-          <line x1="350" y1="290" x2="350" y2="365" stroke="#8ab8d8" stroke-width="2"/>
-          <line x1="305" y1="327" x2="395" y2="327" stroke="#8ab8d8" stroke-width="2"/>
-          <rect x="300" y="362" width="100" height="7" rx="3" fill="#d4c9b5"/>
-
-          <!-- Door -->
-          <rect x="213" y="355" width="94" height="90" rx="4" fill="#8B6914"/>
-          <rect x="213" y="355" width="94" height="90" rx="4" fill="url(#doorShade)" opacity="0.3"/>
-          <circle cx="300" cy="400" r="5" fill="#c9a84c"/>
-          <!-- Door panels -->
-          <rect x="221" y="363" width="36" height="30" rx="2" fill="#7a5c10" opacity="0.5"/>
-          <rect x="263" y="363" width="36" height="30" rx="2" fill="#7a5c10" opacity="0.5"/>
-          <rect x="221" y="400" width="36" height="36" rx="2" fill="#7a5c10" opacity="0.5"/>
-          <rect x="263" y="400" width="36" height="36" rx="2" fill="#7a5c10" opacity="0.5"/>
-          <!-- Door step -->
-          <rect x="200" y="440" width="120" height="10" rx="3" fill="#d4c9b5"/>
-
-          <!-- Roof -->
-          <polygon points="70,255 260,100 450,255" fill="#2d4a1e"/>
-          <polygon points="70,255 260,100 450,255" fill="url(#roofShade)" opacity="0.2"/>
-          <!-- Roof ridge cap -->
-          <line x1="260" y1="100" x2="260" y2="115" stroke="#c9a84c" stroke-width="5" stroke-linecap="round"/>
-          <!-- Roof tiles suggestion -->
-          <g stroke="#243d18" stroke-width="0.8" opacity="0.4">
-            <line x1="150" y1="200" x2="370" y2="200"/>
-            <line x1="115" y1="225" x2="405" y2="225"/>
-            <line x1="85" y1="248" x2="435" y2="248"/>
-          </g>
-
-          <!-- GUTTER along roofline (left slope) -->
-          <path d="M72,255 L260,102" stroke="#6b7280" stroke-width="6" stroke-linecap="square"/>
-          <!-- GUTTER along roofline (right slope) -->
-          <path d="M448,255 L260,102" stroke="#6b7280" stroke-width="6" stroke-linecap="square"/>
-          <!-- Gutter trough (horizontal) - left -->
-          <rect x="68" y="252" width="195" height="10" rx="3" fill="#4b5563"/>
-          <!-- Gutter trough (horizontal) - right -->
-          <rect x="257" y="252" width="195" height="10" rx="3" fill="#4b5563"/>
-          <!-- Gutter highlight -->
-          <rect x="68" y="252" width="195" height="3" rx="1.5" fill="white" opacity="0.15"/>
-          <rect x="257" y="252" width="195" height="3" rx="1.5" fill="white" opacity="0.15"/>
-
-          <!-- Debris in gutter (leaves & muck) -->
-          <ellipse cx="130" cy="257" rx="18" ry="5" fill="#5a7a2a" opacity="0.9"/>
-          <ellipse cx="160" cy="256" rx="14" ry="4" fill="#4a6622" opacity="0.8"/>
-          <ellipse cx="195" cy="258" rx="20" ry="5" fill="#6a8a32" opacity="0.85"/>
-          <ellipse cx="230" cy="257" rx="12" ry="4" fill="#8B6914" opacity="0.6"/>
-          <!-- Leaf shapes -->
-          <path d="M118,254 Q125,248 135,253 Q128,260 118,254Z" fill="#4a7a1a"/>
-          <path d="M185,253 Q193,246 200,252 Q194,259 185,253Z" fill="#5a8a22"/>
-          <path d="M155,255 Q160,250 167,254 Q162,260 155,255Z" fill="#3d6b15"/>
-
-          <!-- Downpipe left -->
-          <rect x="68" y="260" width="12" height="185" rx="3" fill="#4b5563"/>
-          <rect x="68" y="260" width="3" height="185" rx="1.5" fill="white" opacity="0.12"/>
-          <!-- Water overflowing left downpipe -->
-          <g class="water-overflow">
-            <path d="M62,310 Q55,325 58,340 Q61,355 56,368" stroke="#5bb4f0" stroke-width="2.5" stroke-linecap="round" fill="none" opacity="0.8"/>
-            <path d="M80,298 Q88,313 85,328" stroke="#5bb4f0" stroke-width="2" stroke-linecap="round" fill="none" opacity="0.6"/>
-            <circle cx="57" cy="370" r="3" fill="#5bb4f0" opacity="0.7"/>
-            <circle cx="86" cy="330" r="2.5" fill="#5bb4f0" opacity="0.6"/>
-          </g>
-
-          <!-- Downpipe right -->
-          <rect x="440" y="260" width="12" height="185" rx="3" fill="#4b5563"/>
-          <rect x="440" y="260" width="3" height="185" rx="1.5" fill="white" opacity="0.12"/>
-
-          <!-- LADDER -->
-          <g class="ladder-group">
-            <!-- Ladder rails -->
-            <line x1="370" y1="155" x2="350" y2="290" stroke="#c9a84c" stroke-width="6" stroke-linecap="round"/>
-            <line x1="415" y1="155" x2="395" y2="290" stroke="#c9a84c" stroke-width="6" stroke-linecap="round"/>
-            <!-- Ladder rungs -->
-            <line x1="373" y1="168" x2="418" y2="168" stroke="#c9a84c" stroke-width="4" stroke-linecap="round"/>
-            <line x1="368" y1="193" x2="413" y2="193" stroke="#c9a84c" stroke-width="4" stroke-linecap="round"/>
-            <line x1="363" y1="218" x2="408" y2="218" stroke="#c9a84c" stroke-width="4" stroke-linecap="round"/>
-            <line x1="358" y1="243" x2="403" y2="243" stroke="#c9a84c" stroke-width="4" stroke-linecap="round"/>
-            <line x1="353" y1="268" x2="398" y2="268" stroke="#c9a84c" stroke-width="4" stroke-linecap="round"/>
-            <!-- Ladder feet -->
-            <line x1="350" y1="290" x2="342" y2="300" stroke="#c9a84c" stroke-width="5" stroke-linecap="round"/>
-            <line x1="395" y1="290" x2="387" y2="300" stroke="#c9a84c" stroke-width="5" stroke-linecap="round"/>
-          </g>
-
-          <!-- WORKER on ladder -->
-          <g class="worker-group">
-            <!-- Body / hi-vis vest -->
-            <rect x="375" y="175" width="26" height="28" rx="5" fill="#1a6b40"/>
-            <rect x="375" y="175" width="26" height="28" rx="5" fill="#c9a84c" opacity="0.25"/>
-            <!-- Hi-vis stripes -->
-            <line x1="375" y1="189" x2="401" y2="189" stroke="#c9a84c" stroke-width="3" opacity="0.8"/>
-            <!-- Head -->
-            <circle cx="388" cy="168" r="13" fill="#f5c99a"/>
-            <!-- Hard hat -->
-            <path d="M376,165 Q388,150 400,165 L400,168 L376,168Z" fill="#c9a84c"/>
-            <rect x="374" y="165" width="28" height="5" rx="2" fill="#a88830"/>
-            <!-- Arms -->
-            <!-- Left arm reaching into gutter -->
-            <path d="M375,182 Q360,175 350,163" stroke="#f5c99a" stroke-width="6" stroke-linecap="round" fill="none"/>
-            <!-- Right arm -->
-            <path d="M401,182 Q412,178 418,172" stroke="#1a6b40" stroke-width="6" stroke-linecap="round" fill="none"/>
-            <!-- Tool / scoop in left hand -->
-            <path d="M350,163 Q345,155 352,150 Q360,148 358,158 Q355,165 350,163Z" fill="#8B6914"/>
-            <!-- Legs -->
-            <line x1="381" y1="203" x2="376" y2="228" stroke="#2d4a7a" stroke-width="7" stroke-linecap="round"/>
-            <line x1="392" y1="203" x2="395" y2="228" stroke="#2d4a7a" stroke-width="7" stroke-linecap="round"/>
-            <!-- Boots -->
-            <ellipse cx="374" cy="231" rx="6" ry="4" fill="#1a1a2e"/>
-            <ellipse cx="397" cy="231" rx="6" ry="4" fill="#1a1a2e"/>
-          </g>
-
-          <!-- Debris falling from gutter (being cleaned) -->
-          <g opacity="0.85" class="debris-group">
-            <ellipse cx="345" cy="272" rx="7" ry="5" fill="#5a7a2a" transform="rotate(-15 345 272)"/>
-            <path d="M336,278 Q340,270 347,274 Q343,282 336,278Z" fill="#4a6622"/>
-            <ellipse cx="330" cy="285" rx="5" ry="4" fill="#8B6914" opacity="0.8"/>
-            <circle cx="320" cy="295" r="3" fill="#6a8a32"/>
-            <circle cx="325" cy="305" r="2.5" fill="#5a7a2a"/>
-          </g>
-
-          <!-- Bucket hanging on ladder -->
-          <g class="bucket-group">
-            <path d="M412,213 Q416,210 422,210 L424,230 Q422,235 416,235 Q410,235 408,230Z" fill="#c9a84c"/>
-            <line x1="410" y1="213" x2="424" y2="213" stroke="#a88830" stroke-width="2"/>
-            <path d="M411,213 Q418,208 423,213" stroke="#8B6914" stroke-width="2" fill="none"/>
-            <!-- Debris in bucket -->
-            <ellipse cx="416" cy="229" rx="6" ry="3" fill="#5a7a2a" opacity="0.8"/>
-          </g>
-
-          <!-- Clean water flowing freely from right downpipe -->
-          <g opacity="0.75">
-            <path d="M452,320 Q460,335 457,350 Q455,360 459,375 Q462,388 458,400" stroke="#5bb4f0" stroke-width="3" stroke-linecap="round" fill="none"/>
-            <circle cx="458" cy="402" r="4" fill="#5bb4f0" opacity="0.6"/>
-            <circle cx="454" cy="352" r="2.5" fill="#5bb4f0" opacity="0.5"/>
-          </g>
-
-          <!-- Bush / garden left -->
-          <ellipse cx="88" cy="442" rx="35" ry="22" fill="#2d8a56"/>
-          <ellipse cx="72" cy="438" rx="22" ry="16" fill="#1a6b40"/>
-          <ellipse cx="108" cy="436" rx="26" ry="18" fill="#3a9e66"/>
-          <!-- Bush right -->
-          <ellipse cx="432" cy="442" rx="35" ry="22" fill="#2d8a56"/>
-          <ellipse cx="450" cy="438" rx="22" ry="16" fill="#1a6b40"/>
-          <ellipse cx="412" cy="436" rx="26" ry="18" fill="#3a9e66"/>
-
-          <!-- Chimney -->
-          <rect x="300" y="148" width="36" height="60" rx="3" fill="#3d2e1e"/>
-          <rect x="295" y="144" width="46" height="10" rx="3" fill="#4a3828"/>
-          <!-- Smoke -->
-          <path d="M310,140 Q308,128 312,118 Q316,108 313,98" stroke="rgba(255,255,255,0.2)" stroke-width="4" stroke-linecap="round" fill="none"/>
-          <path d="M322,138 Q325,126 320,115 Q316,104 320,94" stroke="rgba(255,255,255,0.15)" stroke-width="3" stroke-linecap="round" fill="none"/>
-
-          <!-- Defs for gradients -->
-          <defs>
-            <linearGradient id="windowGloss" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="white" stop-opacity="0.6"/>
-              <stop offset="100%" stop-color="white" stop-opacity="0"/>
-            </linearGradient>
-            <linearGradient id="roofShade" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stop-color="black" stop-opacity="0"/>
-              <stop offset="100%" stop-color="black" stop-opacity="0.4"/>
-            </linearGradient>
-            <linearGradient id="doorShade" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="white" stop-opacity="0.2"/>
-              <stop offset="100%" stop-color="black" stop-opacity="0.3"/>
-            </linearGradient>
-          </defs>
-        </svg>
-
-        <!-- Floating badge: Before/After -->
-        <div class="hero__badge-float hero__badge-float--tl">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-          <div>
-            <strong>Gutters Cleared</strong>
-            <span>Flowing freely</span>
-          </div>
+      <div class="hero__badges">
+        <div class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Fully Insured</span>
         </div>
-
-        <div class="hero__badge-float hero__badge-float--br">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" fill="currentColor"/></svg>
-          <div>
-            <strong>5-Star Rated</strong>
-            <span>500+ happy homes</span>
-          </div>
+        <div class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>Same-Day Available</span>
+        </div>
+        <div class="badge">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+          <span>100% Satisfaction</span>
         </div>
       </div>
     </div>
