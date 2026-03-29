@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin — Maddern's Place</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+
+<!-- ── LOGIN SCREEN ──────────────────────────────────────────────────────── -->
+<div id="loginScreen" class="login-screen">
+  <div class="login-box">
+    <div class="login-logo">Maddern's Place<em>Admin Panel</em></div>
+    <form id="loginForm">
+      <div class="field">
+        <label>Password</label>
+        <input type="password" id="loginPassword" placeholder="Enter password" required autofocus />
+      </div>
+      <button type="submit" class="btn-primary btn-full" style="margin-top:20px">Log In</button>
+      <p id="loginError" class="login-error" style="display:none">Incorrect password. Please try again.</p>
+    </form>
+  </div>
+</div>
+
+<!-- ── ADMIN APP ─────────────────────────────────────────────────────────── -->
+<div id="adminApp" class="admin-app" style="display:none">
+
+  <aside class="sidebar">
+    <div class="sidebar__brand">Site Admin</div>
+    <nav class="sidebar__nav">
+      <a href="#" data-section="hero"         class="nav-item active">Hero</a>
+      <a href="#" data-section="contact"      class="nav-item">Contact &amp; Hours</a>
+      <a href="#" data-section="stats"        class="nav-item">Stats</a>
+      <a href="#" data-section="services"     class="nav-item">Services</a>
+      <a href="#" data-section="whyus"        class="nav-item">Why Us</a>
+      <a href="#" data-section="process"      class="nav-item">Process Steps</a>
+      <a href="#" data-section="testimonials" class="nav-item">Testimonials</a>
+      <a href="#" data-section="areas"        class="nav-item">Service Areas</a>
+      <a href="#" data-section="footer"       class="nav-item">Footer</a>
+      <a href="#" data-section="settings"     class="nav-item nav-item--settings">Settings</a>
+    </nav>
+    <div class="sidebar__actions">
+      <a href="index.html" target="_blank" class="btn-secondary">↗ View Site</a>
+      <button id="logoutBtn" class="btn-ghost">Log Out</button>
+    </div>
+  </aside>
+
+  <main class="admin-main">
+    <div id="toast" class="toast" style="display:none">Changes saved!</div>
+
+    <!-- ── HERO ──────────────────────────────────────────────── -->
+    <section id="section-hero" class="admin-section active">
+      <h1 class="section-title">Hero Section</h1>
+      <p class="section-desc">The large banner at the top of the page.</p>
+      <div class="card">
+        <div class="field">
+          <label>Tag Line (small label above title)</label>
+          <input type="text" id="hero-tag" />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Title — Line 1</label>
+            <input type="text" id="hero-title1" />
+          </div>
+          <div class="field">
+            <label>Title — Highlighted Line 2</label>
+            <input type="text" id="hero-title2" />
+          </div>
+        </div>
+        <div class="field">
+          <label>Subtitle Paragraph</label>
+          <textarea id="hero-subtitle" rows="3"></textarea>
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Phone Number (digits only, e.g. +61400000000)</label>
+            <input type="text" id="hero-phone" placeholder="+61400000000" />
+          </div>
+          <div class="field">
+            <label>Call Button Label</label>
+            <input type="text" id="hero-callbtn" placeholder="Call Us Now" />
+          </div>
+        </div>
+        <div class="field-row">
+          <div class="field"><label>Trust Badge 1</label><input type="text" id="hero-badge1" /></div>
+          <div class="field"><label>Trust Badge 2</label><input type="text" id="hero-badge2" /></div>
+          <div class="field"><label>Trust Badge 3</label><input type="text" id="hero-badge3" /></div>
+        </div>
+        <button class="btn-primary" data-save="hero">Save Hero</button>
+      </div>
+    </section>
+
+    <!-- ── CONTACT & HOURS ───────────────────────────────────── -->
+    <section id="section-contact" class="admin-section">
+      <h1 class="section-title">Contact &amp; Hours</h1>
+      <p class="section-desc">These details appear in the Contact section, the footer, and the hero call button.</p>
+      <div class="card">
+        <div class="field-row">
+          <div class="field">
+            <label>Phone — link value (e.g. +61400000000)</label>
+            <input type="text" id="contact-phone" placeholder="+61400000000" />
+          </div>
+          <div class="field">
+            <label>Phone — display text (e.g. +61 (0) 400 000 000)</label>
+            <input type="text" id="contact-phoneDisplay" placeholder="+61 (0) 400 000 000" />
+          </div>
+        </div>
+        <div class="field">
+          <label>Email Address</label>
+          <input type="email" id="contact-email" />
+        </div>
+        <div class="field">
+          <label>Business Hours</label>
+          <input type="text" id="contact-hours" placeholder="Mon – Sat: 7:00am – 5:00pm" />
+        </div>
+        <button class="btn-primary" data-save="contact">Save Contact</button>
+      </div>
+    </section>
+
+    <!-- ── STATS ─────────────────────────────────────────────── -->
+    <section id="section-stats" class="admin-section">
+      <h1 class="section-title">Stats Strip</h1>
+      <p class="section-desc">The four numbers shown in the dark green band beneath the hero. Use ★ as the suffix to show a star icon.</p>
+      <div class="card">
+        <div id="statsFields"></div>
+        <button class="btn-primary" data-save="stats">Save Stats</button>
+      </div>
+    </section>
+
+    <!-- ── SERVICES ──────────────────────────────────────────── -->
+    <section id="section-services" class="admin-section">
+      <h1 class="section-title">Services</h1>
+      <p class="section-desc">The service cards shown in the "What We Do" section.</p>
+      <div id="servicesFields"></div>
+      <button class="btn-primary" data-save="services">Save Services</button>
+    </section>
+
+    <!-- ── WHY US ────────────────────────────────────────────── -->
+    <section id="section-whyus" class="admin-section">
+      <h1 class="section-title">Why Us</h1>
+      <div class="card">
+        <div class="field-row">
+          <div class="field">
+            <label>Experience Badge (e.g. 5+)</label>
+            <input type="text" id="whyus-expYears" style="max-width:120px" />
+          </div>
+        </div>
+        <div class="field">
+          <label>Section Title</label>
+          <input type="text" id="whyus-title" />
+        </div>
+        <div class="field">
+          <label>Intro Paragraph</label>
+          <textarea id="whyus-intro" rows="3"></textarea>
+        </div>
+        <div id="whyusItems"></div>
+        <button class="btn-primary" data-save="whyUs">Save Why Us</button>
+      </div>
+    </section>
+
+    <!-- ── PROCESS ───────────────────────────────────────────── -->
+    <section id="section-process" class="admin-section">
+      <h1 class="section-title">Process Steps</h1>
+      <p class="section-desc">The "How It Works" steps.</p>
+      <div id="processFields"></div>
+      <button class="btn-primary" data-save="process">Save Process</button>
+    </section>
+
+    <!-- ── TESTIMONIALS ──────────────────────────────────────── -->
+    <section id="section-testimonials" class="admin-section">
+      <h1 class="section-title">Testimonials</h1>
+      <div id="testimonialsFields"></div>
+      <button class="btn-primary" data-save="testimonials">Save Testimonials</button>
+    </section>
+
+    <!-- ── SERVICE AREAS ─────────────────────────────────────── -->
+    <section id="section-areas" class="admin-section">
+      <h1 class="section-title">Service Areas</h1>
+      <div class="card">
+        <p class="section-desc">One suburb / area name per line. These appear as the pill badges on the site.</p>
+        <div class="field">
+          <label>Areas (one per line)</label>
+          <textarea id="areas-list" rows="12"></textarea>
+        </div>
+        <button class="btn-primary" data-save="areas">Save Areas</button>
+      </div>
+    </section>
+
+    <!-- ── FOOTER ────────────────────────────────────────────── -->
+    <section id="section-footer" class="admin-section">
+      <h1 class="section-title">Footer</h1>
+      <div class="card">
+        <div class="field">
+          <label>Brand Tagline</label>
+          <textarea id="footer-tagline" rows="2"></textarea>
+        </div>
+        <div class="field">
+          <label>Copyright Text</label>
+          <input type="text" id="footer-copyright" />
+        </div>
+        <div class="field">
+          <label>ABN</label>
+          <input type="text" id="footer-abn" placeholder="ABN: XX XXX XXX XXX" />
+        </div>
+        <div class="field-row">
+          <div class="field">
+            <label>Facebook URL</label>
+            <input type="text" id="footer-facebook" placeholder="https://facebook.com/yourpage" />
+          </div>
+          <div class="field">
+            <label>Instagram URL</label>
+            <input type="text" id="footer-instagram" placeholder="https://instagram.com/yourpage" />
+          </div>
+        </div>
+        <button class="btn-primary" data-save="footer">Save Footer</button>
+      </div>
+    </section>
+
+    <!-- ── SETTINGS ──────────────────────────────────────────── -->
+    <section id="section-settings" class="admin-section">
+      <h1 class="section-title">Settings</h1>
+
+      <div class="card">
+        <h3>Change Admin Password</h3>
+        <div class="field">
+          <label>Current Password</label>
+          <input type="password" id="currentPassword" />
+        </div>
+        <div class="field">
+          <label>New Password</label>
+          <input type="password" id="newPassword" />
+        </div>
+        <div class="field">
+          <label>Confirm New Password</label>
+          <input type="password" id="confirmPassword" />
+        </div>
+        <button class="btn-primary" id="changePasswordBtn">Change Password</button>
+        <p id="passwordMsg" class="field-hint" style="display:none"></p>
+      </div>
+
+      <div class="card card--danger">
+        <h3 style="color:#dc2626">Reset Site Content</h3>
+        <p class="section-desc">Resets all site text back to the original defaults. This cannot be undone.</p>
+        <button class="btn-danger" id="resetBtn">Reset to Defaults</button>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="content.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
