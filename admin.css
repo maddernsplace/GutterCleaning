@@ -2,9 +2,9 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --green-dark: #0f4d2e;
-  --green:      #1a6b40;
-  --gold:       #c9a84c;
+  --green-dark: #1E3A5F;
+  --green:      #1a4f78;
+  --gold:       #2D9CDB;
   --white:      #ffffff;
   --bg:         #f1f5f9;
   --card:       #ffffff;
