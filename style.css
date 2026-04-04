@@ -581,6 +581,7 @@ ul { list-style: none; }
 .process__arrow svg { width: 32px; height: 32px; }
 
 /* ── TESTIMONIALS ────────────────────────── */
+.testimonials { display: none !important; }
 .testimonials { background: var(--green-dark); }
 .testimonials .section__tag {
   background: rgba(45,156,219,0.15);
