@@ -48,7 +48,7 @@ const SITE_DEFAULTS = {
     { text: 'Used Maddern\'s Place twice now and both times they\'ve been fantastic. On time, thorough, and left everything clean. Definitely my go-to for gutters.',        name: 'Tom M.',   role: 'Property Manager' },
     { text: 'Had a major blockage causing water to overflow into my walls. They came out same day and sorted it completely. Friendly, efficient, and great value.',          name: 'Jenny L.', role: 'Homeowner' }
   ],
-  areas: ['Area 1', 'Area 2', 'Area 3', 'Area 4', 'Area 5', 'Area 6', 'Area 7', 'And More...'],
+  areas: ['Morphett Vale', 'Hackham', 'Hackham West', 'Noarlunga', 'Port Noarlunga', 'Christie Downs', 'Reynella', 'Woodcroft', 'Onkaparinga Hills', 'Seaford', 'Seaford Rise', 'Old Noarlunga', 'Huntfield Heights', "O'Sullivan Beach", 'Lonsdale', 'Trott Park', 'Happy Valley', 'Aberfoyle Park'],
   contact: {
     phone:        '+61459119149',
     phoneDisplay: '+61 459 119 149',
