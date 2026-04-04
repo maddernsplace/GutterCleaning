@@ -7,7 +7,7 @@ const SITE_DEFAULTS = {
     title1: 'Keep Your Home',
     title2: 'Safe & Protected',
     subtitle: 'Blocked gutters cause serious damage. We clear them fast, safely, and affordably — so you don\'t have to worry.',
-    phone: '+61000000000',
+    phone: '+61459119149',
     callBtnText: 'Call Us Now',
     badge1: 'Fully Insured',
     badge2: 'Same-Day Available',
@@ -50,16 +50,16 @@ const SITE_DEFAULTS = {
   ],
   areas: ['Area 1', 'Area 2', 'Area 3', 'Area 4', 'Area 5', 'Area 6', 'Area 7', 'And More...'],
   contact: {
-    phone:        '+61000000000',
-    phoneDisplay: '+61 (0) 000 000 000',
-    email:        'info@maddersplace.com.au',
-    hours:        'Mon – Sat: 7:00am – 5:00pm'
+    phone:        '+61459119149',
+    phoneDisplay: '+61 459 119 149',
+    email:        'maddernsplace@gmail.com',
+    hours:        'Monday to Friday: 9:00am – 4:00pm'
   },
   footer: {
     tagline:   'Professional gutter cleaning services you can trust. Local, reliable, and always fairly priced.',
     copyright: '© 2024 Maddern\'s Place Gutter Cleaning. All rights reserved.',
     abn:       'ABN: XX XXX XXX XXX',
-    facebook:  '#',
+    facebook:  'https://www.facebook.com/maddernsplace',
     instagram: '#'
   }
 };
