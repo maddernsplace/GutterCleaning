@@ -59,7 +59,7 @@ const SITE_DEFAULTS = {
     tagline:   'Professional gutter cleaning services you can trust. Local, reliable, and always fairly priced.',
     copyright: '© 2024 Maddern\'s Place Gutter Cleaning. All rights reserved.',
     abn:       'ABN: XX XXX XXX XXX',
-    facebook:  '#',
+    facebook:  'https://www.facebook.com/maddernsplace',
     instagram: '#'
   }
 };
