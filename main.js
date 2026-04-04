@@ -77,16 +77,38 @@ if (form) {
     });
     if (!valid) return;
 
-    // Simulate form submission
     const submitBtn = form.querySelector('button[type="submit"]');
     submitBtn.disabled = true;
     submitBtn.textContent = 'Sending...';
 
-    setTimeout(() => {
-      form.style.display = 'none';
-      successMsg.classList.add('visible');
-      successMsg.style.display = 'flex';
-    }, 800);
+    const data = {
+      firstName:    form.firstName.value,
+      lastName:     form.lastName.value,
+      phone:        form.phone.value,
+      email:        form.email.value,
+      address:      form.address.value,
+      propertyType: form.propertyType.value,
+      service:      form.service.value,
+      message:      form.message.value,
+      _subject:     'New Quote Request – Maddern\'s Place Gutter Cleaning'
+    };
+
+    fetch('https://formsubmit.co/ajax/maddernsplace@gmail.com', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(data)
+    })
+      .then(res => res.json())
+      .then(() => {
+        form.style.display = 'none';
+        successMsg.classList.add('visible');
+        successMsg.style.display = 'flex';
+      })
+      .catch(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Send My Quote Request';
+        alert('Something went wrong. Please try again or call us directly.');
+      });
   });
 }
 
