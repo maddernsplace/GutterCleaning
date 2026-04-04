@@ -699,6 +699,29 @@ ul { list-style: none; }
 }
 .areas__note a:hover { color: var(--green-dark); }
 
+/* ── FAQ ─────────────────────────────────── */
+.faq { background: var(--white); }
+.faq__list { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+.faq__item { border: 1px solid #e2e8e0; border-radius: 10px; overflow: hidden; }
+.faq__item summary {
+  padding: 18px 24px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--green-dark);
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.faq__item summary::-webkit-details-marker { display: none; }
+.faq__item summary::after { content: '+'; font-size: 1.4rem; color: var(--gold); line-height: 1; }
+.faq__item[open] summary::after { content: '−'; }
+.faq__item[open] summary { color: var(--green); }
+.faq__item p { padding: 0 24px 18px; color: var(--text-muted); line-height: 1.7; margin: 0; }
+.faq__item p a { color: var(--green); font-weight: 600; }
+
 /* ── CONTACT ─────────────────────────────── */
 .contact { background: var(--white); }
 .contact__inner {
